@@ -16,3 +16,5 @@ Two other challenges I hope to tackle are:
 
 1. the interpretability of various hyperparameters on the prior -- the gaussian process parameters affect beta and alpha instead of the expectation of Beta(a,b), which leads to rather tricky interpretation.
 2. confidence distance -- in "information-space", 0.9999 and 0.9995 are as far apart as 0.9 and 0.8. currently the gaussian process uses this "log space" domain, but it leads to very wide posteriors near the tails (maybe this is the "correct" thing to do though -- anything else would be putting too much faith in the model -- or alternatively, maybe there's some axis along which our priors should be made much stronger (i.e the confidence curve is very likely monotonic)). 
+
+In the current state, the code is mostly just a playground of different ideas and half-baked implementations -- a lot more testing and fine-tuning is needed before it's really usable.
